@@ -39,6 +39,16 @@ namespace TestMinApp
         }
 
         [TestMethod]
+        public void TestMinSuccesZeros()
+        {
+            int min;
+
+            min = Program.Min(0, 0, 0);
+
+            Assert.AreEqual(0, min);
+        }
+
+        [TestMethod]
         public void TestMinSuccesPositivesAndNegatives()
         {
             int min;
